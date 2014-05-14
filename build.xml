@@ -14,7 +14,7 @@
 	</target>
 	
 	<target name="compress" depends="compile">
-			<echo message="Compress target ...........34" />
+			<echo message="Compress target ...........4" />
 	        <jar destfile="dist/HelloWorld.jar" basedir="build/classes" />
 	</target>
 	
