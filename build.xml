@@ -1,6 +1,6 @@
 <?xml version="1.0" ?> 
 <project name="HelloWorld" default="compress">
-
+        <record name="successbuild.log" />
 	<echo message="HelloWorld ant build project......1 " />
 	<target name="init">
 	    <echo message="init target ...........2 " />
