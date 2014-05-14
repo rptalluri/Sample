@@ -1,28 +1,29 @@
 <?xml version="1.0" ?> 
 <project name="HelloWorld" default="compress">
 
-	<echo message="HelloWorld ant build project " />
+	<echo message="HelloWorld ant build project......1 " />
 	<target name="init">
-	    <echo message="init target ...........1 " />
+	    <echo message="init target ...........2 " />
 		<mkdir dir="build/classes" />
 		<mkdir dir="dist" />
 	</target>
 
 	<target name="compile" depends="init">
-	  <echo message="Compile target ...........2 " />
+	  <echo message="Compile target ...........3 " />
 		<javac srcdir="src" destdir="build/classes" />
 	</target>
 	
 	<target name="compress" depends="compile">
-			<echo message="Compress target ...........3 " />
+			<echo message="Compress target ...........34" />
 	        <jar destfile="dist/HelloWorld.jar" basedir="build/classes" />
 	</target>
 	
 	<target name="execute" depends="compile">
-		<echo message="Execute target ...........4 " />
+		<echo message="Execute target ...........5 " />
 		<java classname="com.vaannila.helloworld.HelloWorld" classpath="build/classes" />
 	</target>
-
+	
+	<echo message="Execute target ...........6 " />
 	<target name="clean">
 		<delete dir="build" />
 		<delete dir="dist" />
